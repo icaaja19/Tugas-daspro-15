@@ -1,0 +1,11 @@
+{
+  "name": "theme",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx tailwindcss -i ./static/src/input.css -o ./static/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "autoprefixer": "^10.4.0"
+  }
+}
