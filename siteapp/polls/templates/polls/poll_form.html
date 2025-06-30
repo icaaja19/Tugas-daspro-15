@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Polling</title>
+</head>
+<body>
+    <h1>Form Polling</h1>
+    <form action="{% url 'submit_poll' %}" method="post">
+        {% csrf_token %}
+        <label>Nama:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Pilihan Anda:</label><br>
+        <input type="radio" name="choice" value="Ya" required> Ya<br>
+        <input type="radio" name="choice" value="Tidak" required> Tidak<br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

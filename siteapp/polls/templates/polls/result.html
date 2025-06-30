@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Polling</title>
+</head>
+<body>
+    <h1>Hasil Polling</h1>
+    <table border="1">
+        <tr>
+            <th>Nama</th>
+            <th>Pilihan</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.name }}</td>
+            <td>{{ result.choice }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="{% url 'poll_form' %}">Kembali ke Form</a>
+</body>
+</html>
